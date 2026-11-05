@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit HTML Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #mesaj {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h1>Merhaba Dünya! 🌍</h1>
+    <p>Bu basit bir HTML sayfasıdır. İçinde başlık, paragraf, liste ve buton bulunur.</p>
+
+    <h2>Sevdiğim Şeyler</h2>
+    <ul>
+        <li>Kod yazmak</li>
+        <li>Kahve içmek</li>
+        <li>Müzik dinlemek</li>
+    </ul>
+
+    <button onclick="mesajGoster()">Bana Tıkla</button>
+    <p id="mesaj"></p>
+
+    <script>
+        function mesajGoster() {
+            document.getElementById('mesaj').textContent = 'Butona tıkladın! 🎉';
+        }
+    </script>
+</body>
+</html>
